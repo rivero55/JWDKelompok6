@@ -37,8 +37,8 @@ $tgl=date('Y-m-d');
                     href="index.php?p=beranda">Beranda</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3"
                     href="index.php?p=anggota">Data Anggota</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.php?p=buku">Data
-                    Buku</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.php?p=bus">Data
+                    Bus</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3"
                     href="index.php?p=transaksi-peminjaman">Transaksi Peminjaman</a>
             </div>

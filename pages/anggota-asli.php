@@ -14,7 +14,7 @@
 
 		
 		<?php
-		$sql="SELECT * FROM tbanggota ORDER BY idanggota DESC";
+		$sql="SELECT * FROM pelanggan ORDER BY id_pelanggan DESC";
 		$q_tampil_anggota = mysqli_query($db, $sql);
 		
 		$nomor=1;
@@ -22,10 +22,12 @@
 		?>
 		<tr>
 			<td><?php echo $nomor++; ?></td>
-			<td><?php echo $r_tampil_anggota['idanggota']; ?></td>
-			<td><?php echo $r_tampil_anggota['nama']; ?></td>
-			<td><?php echo $r_tampil_anggota['jeniskelamin']; ?></td>
+			<td><?php echo $r_tampil_anggota['id_pelanggan']; ?></td>
+			<td><?php echo $r_tampil_anggota['nama_lengkap']; ?></td>
+			<td><?php echo $r_tampil_anggota['no_ktp']; ?></td>
+			<td><?php echo $r_tampil_anggota['no_hp']; ?></td>
 			<td><?php echo $r_tampil_anggota['alamat']; ?></td>
+			<td><?php echo $r_tampil_anggota['status']; ?></td>
 			<td>
 				<div class="tombol-opsi-container"><a href="cetak/cetak-kartu-identitas-anggota.php?id=<?php echo $r_tampil_anggota['danggota]; ?>" 
 					target="_blank" class="tombol">Cetak Kartu</a></div>

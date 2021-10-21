@@ -19,9 +19,9 @@ $tgl=date('Y-m-d');
             <div class="container-fluid py-5">
                 <!-- <div class="nama-alamat-perpustakaan"> -->
 					<div class="text-center">
-                    <h1> PERPUSTAKAAN UMUM </h1>
+                    <h1> Rentalin Kuy </h1>
 					
-                    <h4>Jl. Lembah Abang No 11, Telp: (021)55555555</h4>
+                    <h4>Jl. Perkututu e6 sawah urungan merpati, kiara condong</h4>
 					</div>
                 </div>
                 <!-- <div class="nama-alamat-perpustakaan"> -->

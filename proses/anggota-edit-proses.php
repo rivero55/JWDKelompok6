@@ -1,16 +1,18 @@
 <?php
 include '../koneksi.php';
 
-$id_anggota=$_POST['id_anggota'];
-$nama=$_POST['name'];
-$jenis_kelamin=$_POST['jenis_kelamin'];
+$id_pelanggan=$_POST['id_pelanggan'];
+$nama=$_POST['nama_lengkap'];
+$no_ktp=$_POST['no_ktp'];
+$no_hp=$_POST['no_hp'];
 $alamat=$_POST['alamat'];
+$status="Tidak Rental";
 
 if(isset($_POST['simpan'])){
 	mysqli_query($db,
-		"UPDATE tbanggota
-		SET nama='$nama',jeniskelamin='$jenis_kelamin',alamat='$alamat'
-		WHERE idanggota='$id_anggota'"
+		"UPDATE pelanggan
+		SET nama_lengkap='$nama',no_ktp='$no_ktp',no_hp='$no_hp',alamat='$alamat'
+		WHERE id_pelanggan='$id_pelanggan'"
 	);
 	header("location:../index.php?p=anggota");
 }

@@ -1,28 +1,30 @@
 <?php
 include '../koneksi.php';
 $id_transaksi=$_POST['id_transaksi'];
-$id_anggota=$_POST['id_anggota'];
-$id_buku=$_POST['id_buku'];
+$id_pelanggan=$_POST['id_pelanggan'];
+$id_bus=$_POST['id_bus'];
 $tgl_pinjam=$_POST['tgl_pinjam'];
-$status_anggota="Sedang Meminjam";
-$status_buku="Dipinjam";
+$status_pelanggan="sedang merental";
+$status_bus="Dirental";
 
 
 if(isset($_POST['simpan'])){
-	mysqli_query($db,
-		"INSERT INTO tbtransaksi
-		VALUES('$id_transaksi','$id_anggota','$id_buku','$tgl_pinjam','')"
+	$transaksi_test=mysqli_query($db,
+		"INSERT INTO transaksi
+		VALUES(NULL,'$id_pelanggan','$id_bus','$tgl_pinjam','')"
+		
 	);
 	mysqli_query($db,
-		"UPDATE tbanggota
-		SET status='$status_anggota'
-		WHERE idanggota='$id_anggota'"
+		"UPDATE pelanggan
+		SET status='$status_pelanggan'
+		WHERE id_pelanggan='$id_pelanggan'"
 	);
 	mysqli_query($db,
-		"UPDATE tbbuku
-		SET status='$status_buku'
-		WHERE idbuku='$id_buku'"
+		"UPDATE bus
+		SET status='$status_bus'
+		WHERE id_bus='$id_bus'"
 	);
 	header("location:../index.php?p=transaksi-peminjaman");
+	echo($transaksi_test);
 }
 ?>

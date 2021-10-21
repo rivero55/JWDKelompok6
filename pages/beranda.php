@@ -1,7 +1,7 @@
-<div id="label-page"><h3>Beranda</h3></div>
 <div id="content">
 	<div id="beranda-judul">
-		<h1>SELAMAT DATANG DI SISTEM INFORMASI PERPUSTAKAAN TELKOM</h1>
+		<h1>Selamat Datang, Admin</h1>
+		<img src="./images/Sewa Bus Pariwisata.png">
 	</div>
 	<div id="beranda-konten">
 		<h2> "MEMBACA ADALAH JENDELA DUNIA" </h2>

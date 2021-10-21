@@ -29,7 +29,7 @@
 			<td class="label-formulir">Buku</td>
 			<td class="isian-formulir">
 				<select name="id_bus" class="isian-formulir isian-formulir-border" required>
-					<option value="" select="selected"> Pilih Data Buku </option>
+					<option value="" select="selected"> Pilih Data Bus </option>
 					<?php
 						$q_tampil_buku=mysqli_query($db,
 							"SELECT * FROM bus

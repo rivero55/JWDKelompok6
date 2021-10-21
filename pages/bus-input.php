@@ -2,18 +2,10 @@
 <div id="content">
 	<form action="proses/bus-input-proses.php" method="post">
 	<table id="tabel-input">
-	<?php
-		$kode = "BUS";
-		$sql_get_latest = "SELECT MAX(id_bus)
-		FROM bus";
-		$latest_id = mysqli_fetch_array(mysqli_query($db, $sql_get_latest))[0];
-		$latest_id = (substr($latest_id, 2));
-		$id_bus =$kode.str_pad($latest_id +1, 3, "0", STR_PAD_LEFT) ;
-		
-	?>
+	
 		<tr>
 			<td class="label-formulir">ID Bus</td>
-			<td class="isian-formulir"><input type="text" value="<?php echo $id_bus ?>" name="id_bus" class="isian-formulir isian-formulir-border" readonly></td>
+			<td class="isian-formulir"><input type="text"  name="id_bus" class="isian-formulir isian-formulir-border" readonly></td>
 		</tr>
 		<tr>
 			<td class="label-formulir">Nama Bus</td>
